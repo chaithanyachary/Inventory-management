@@ -1,0 +1,20 @@
+package com.sample.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.sample.entity.Supplier;
+import com.sample.repository.SupplierRepository;
+
+@Service
+public class SupplierService 
+{
+	private SupplierRepository supplierRepository;
+	
+	public List<Supplier> getAllSupplier()
+	{
+		List<Supplier> suppliers = supplierRepository.findAll();
+		return suppliers;
+	}
+}

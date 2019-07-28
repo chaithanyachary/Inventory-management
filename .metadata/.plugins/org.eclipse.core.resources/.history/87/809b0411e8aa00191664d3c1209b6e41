@@ -1,0 +1,14 @@
+package com.cim.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.cim.entity.Product;
+
+public interface ProductService 
+{
+	public Product createProduct(Product product);
+	
+	public List<Product> getAllProducts();
+}

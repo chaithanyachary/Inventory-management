@@ -1,0 +1,11 @@
+package com.cim.entity;
+
+public class Product 
+{
+	private int productId;
+	private String productName;
+	private String productType;
+	private String productDescription;
+	
+	
+}

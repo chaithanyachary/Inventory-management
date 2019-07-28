@@ -1,0 +1,57 @@
+package com.inventory.entity;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "item_stock_level")
+public class ItemStockLevel 
+{
+	
+	private int inventoryItemId;
+	
+	
+	@Id
+	private Date stockTakingDate;
+	private int quantityInStock;
+	
+	public ItemStockLevel() {}
+
+	public ItemStockLevel(int itemStockLevelId, Date stockTakingDate, int quantityInStock) {
+		super();
+		this.itemStockLevelId = itemStockLevelId;
+		this.stockTakingDate = stockTakingDate;
+		this.quantityInStock = quantityInStock;
+	}
+
+	public int getItemStockLevelId() {
+		return itemStockLevelId;
+	}
+
+	public void setItemStockLevelId(int itemStockLevelId) {
+		this.itemStockLevelId = itemStockLevelId;
+	}
+
+	public Date getStockTakingDate() {
+		return stockTakingDate;
+	}
+
+	public void setStockTakingDate(Date stockTakingDate) {
+		this.stockTakingDate = stockTakingDate;
+	}
+
+	public int getQuantityInStock() {
+		return quantityInStock;
+	}
+
+	public void setQuantityInStock(int quantityInStock) {
+		this.quantityInStock = quantityInStock;
+	}
+	
+	
+	
+ 
+}

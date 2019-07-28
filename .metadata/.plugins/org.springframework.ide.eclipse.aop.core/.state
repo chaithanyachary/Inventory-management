@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="dummy"/>
+<aop-project name="inventory-management-items"/>
+<aop-project name="eureka-zuul-gateway"/>
+<aop-project name="inventory-mgmt-service"/>
+<aop-project name="eureka-registry-service"/>
+<aop-project name="sample-model-mapper"/>
+</aop-reference-model>

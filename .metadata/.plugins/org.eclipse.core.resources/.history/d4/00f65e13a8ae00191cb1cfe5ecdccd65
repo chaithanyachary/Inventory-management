@@ -1,0 +1,5 @@
+package com.sample.model.repository;
+
+public class EmployeeRepository {
+
+}

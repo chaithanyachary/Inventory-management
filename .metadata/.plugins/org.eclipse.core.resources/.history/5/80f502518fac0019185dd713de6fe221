@@ -1,0 +1,51 @@
+package com.inventory.entity;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+@Entity
+@Table(name = "inventory_item")
+public class InventoryItem 
+{
+	@Id
+	private String inventoryItemId;
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "brand_id")
+	@JsonBackReference("brand-item")
+	private Brand brand;
+	private String itemCategoryCode;
+	private String itemDescription;
+	private int averageMonthlyUsage;
+	private int reorderLevel;
+	private int reorderQuantity;
+	
+	
+	public InventoryItem(String inventoryItemId, Brand brand, String itemCategoryCode, String itemDescription,
+			int averageMonthlyUsage, int reorderLevel, int reorderQuantity) {
+		super();
+		this.inventoryItemId = inventoryItemId;
+		this.brand = brand;
+		this.itemCategoryCode = itemCategoryCode;
+		this.itemDescription = itemDescription;
+		this.averageMonthlyUsage = averageMonthlyUsage;
+		this.reorderLevel = reorderLevel;
+		this.reorderQuantity = reorderQuantity;
+	}
+
+
+	@Override
+	public String toString() {
+		return "InventoryItem [inventoryItemId=" + inventoryItemId + ", brand=" + brand + ", itemCategoryCode="
+				+ itemCategoryCode + ", itemDescription=" + itemDescription + ", averageMonthlyUsage="
+				+ averageMonthlyUsage + ", reorderLevel=" + reorderLevel + ", reorderQuantity=" + reorderQuantity + "]";
+	}
+	
+	
+}

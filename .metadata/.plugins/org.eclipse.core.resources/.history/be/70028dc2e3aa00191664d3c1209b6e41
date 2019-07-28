@@ -1,0 +1,8 @@
+package com.cim.service;
+
+import com.cim.entity.Product;
+
+public interface ProductService 
+{
+	public void createProduct(Product product);
+}

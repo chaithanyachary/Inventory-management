@@ -1,0 +1,20 @@
+package com.inventory.entity;
+
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "ref_item_category")
+public class RefItemCategory 
+{
+	@Id
+	private String itemCategoryCode;
+	private String itemCategoryDescription;
+	
+	@OneToMany(mappedBy = "ref_item_category")
+	private Set<InventoryItem> inventoryItemSet;
+}

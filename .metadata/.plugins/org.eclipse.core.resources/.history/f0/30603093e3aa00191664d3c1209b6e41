@@ -1,0 +1,5 @@
+package com.cim.dao;
+
+public class ProductRepository {
+
+}

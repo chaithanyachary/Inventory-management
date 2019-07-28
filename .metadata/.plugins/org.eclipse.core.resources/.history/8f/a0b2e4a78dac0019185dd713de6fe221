@@ -1,0 +1,23 @@
+package com.inventory.entity;
+
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "brand")
+public class Brand 
+{
+	@Id
+	private String brandId;
+	private String brandName;
+	
+	@OneToMany(mappedBy = "brand")
+	@JoinColumn(name = "brand_id")
+	private Set<InventoryItem> inventoryItemSet;
+	
+}

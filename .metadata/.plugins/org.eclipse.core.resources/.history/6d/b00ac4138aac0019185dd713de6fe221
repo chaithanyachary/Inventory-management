@@ -1,0 +1,11 @@
+package com.inventory.serviceImpl;
+
+import org.springframework.stereotype.Service;
+
+import com.inventory.service.ItemService;
+
+@Service
+public class ItemServiceImpl implements ItemService
+{
+
+}

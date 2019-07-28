@@ -1,0 +1,14 @@
+package com.inventory.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "ref_item_category")
+public class RefItemCategory 
+{
+	@Id
+	private String itemCategoryCode;
+	private String itemCategoryDescription;
+}

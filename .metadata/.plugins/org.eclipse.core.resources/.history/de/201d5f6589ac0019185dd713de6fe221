@@ -1,0 +1,16 @@
+package com.inventory.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "brand")
+public class Brand 
+{
+	@Id
+	@generated
+	private String brandId;
+	private String brandName;
+	
+}

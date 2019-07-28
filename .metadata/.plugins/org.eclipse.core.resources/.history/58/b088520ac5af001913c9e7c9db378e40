@@ -1,0 +1,28 @@
+package com.inventory.entity;
+
+import java.util.Date;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "item_stock_level")
+public class ItemStockLevel 
+{
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "inventory_item_id")
+	private InventoryItem inventoryItem;
+	
+	@Id
+	private Date stockTakingDate;
+	private int quantityInStock;
+	
+	public ItemStockLevel() {}
+
+
+}

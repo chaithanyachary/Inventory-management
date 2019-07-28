@@ -1,0 +1,5 @@
+package com.sample.model.util;
+
+public class ModelMapper {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ResponseModel.java&apos; to &apos;inventory-management-items/src/main/java/com.inventory.model&apos;&#x0D;&#x0A;- Original project: &apos;inventory-management-items&apos;&#x0D;&#x0A;- Destination element: &apos;inventory-management-items/src/main/java/com.inventory.model&apos;&#x0D;&#x0A;- Original element: &apos;com.inventory.ResponseModel.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;com.inventory.model" element1="/src\/main\/java&lt;com.inventory{ResponseModel.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1563949996865" units="1" version="1.0"/>
+</session>

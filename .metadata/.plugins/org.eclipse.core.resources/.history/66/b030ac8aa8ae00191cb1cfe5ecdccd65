@@ -1,0 +1,13 @@
+package com.sample.model.service;
+
+import com.sample.model.model.EmployeeModel;
+
+public class EmployeeServiceImpl implements EmployeeService {
+
+	@Override
+	public void createEmployee(EmployeeModel employeeModel) 
+	{
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.sample.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sample.entity.Supplier;
+import com.sample.repository.SupplierRepository;
+
+@Service
+public class SupplierService 
+{
+	@Autowired
+	private SupplierRepository supplierRepository;
+	
+	public List<Supplier> getAllSupplier()
+	{
+		List<Supplier> suppliers = supplierRepository.findAll();
+		return suppliers;
+	}
+	
+	public void saveSupplier(Supplier supplier) 
+	{
+		supplierRepository.save(supplier)
+	}
+}

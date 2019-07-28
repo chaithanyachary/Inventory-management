@@ -1,0 +1,11 @@
+package com.sample.model.util;
+
+import com.sample.model.model.EmployeeModel;
+
+public class ModelMapperConvertor 
+{
+	public static void EntityModelMapper(EmployeeModel employeeModel) 
+	{
+		
+	}
+}

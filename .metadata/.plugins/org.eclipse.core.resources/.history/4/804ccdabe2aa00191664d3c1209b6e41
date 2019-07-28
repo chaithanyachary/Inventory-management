@@ -1,0 +1,6 @@
+package com.cim.entity;
+
+public class Product 
+{
+	
+}

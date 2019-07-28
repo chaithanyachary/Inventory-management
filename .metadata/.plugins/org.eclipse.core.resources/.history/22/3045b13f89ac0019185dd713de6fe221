@@ -1,0 +1,16 @@
+package com.inventory.entity;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "item_stick_level")
+public class ItemStockLevel 
+{
+	private int itemStockLevelId;
+	private Date stockTakingDate;
+	private int quantityInStock;
+ 
+}
