@@ -21,7 +21,7 @@ pipeline {
             }
       }
     }
-    /* stage('Run zuul application') {
+     stage('Run zuul application') {
       steps {
          withEnv(['JENKINS_NODE_COOKIE=dontkill']) {
              sleep(time:30,unit:"SECONDS")
@@ -29,6 +29,6 @@ pipeline {
               
             }
       }
-    } */
+    } 
   }
 }
